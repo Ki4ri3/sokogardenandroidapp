@@ -6,7 +6,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#678"
+    android:background="#050526"
     android:orientation="vertical"
     tools:context=".Signin">
 
@@ -35,7 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:background="#f9ba7a"
+            android:background="#5F5852"
             android:padding="10dp">
 
 <!--        Below is the email editText-->
@@ -44,11 +44,13 @@
                 android:layout_height="wrap_content"
                 android:hint="📧 Enter Email Adress"
                 android:textColorHint="#000000"
+                android:inputType="textEmailAddress"
                 android:id="@+id/email"
+                android:textColor="#060606"
                 android:fontFamily="times new roman"
                 android:layout_margin="8dp"
                 android:padding="11dp"
-                android:background="#f99c9b" />
+                android:background="#F8F6F6" />
 
             <!--        Below is the password editText-->
             <EditText
@@ -57,10 +59,12 @@
                 android:hint="🔑 Enter Your Password"
                 android:textColorHint="#000000"
                 android:id="@+id/password"
+                android:inputType="textPassword"
+                android:textColor="#060606"
                 android:fontFamily="times new roman"
                 android:layout_margin="8dp"
                 android:padding="11dp"
-                android:background="#f99c9b"
+                android:background="#F8F6F6"
                  />
 
 <!--          Below is the sign in bbutton  -->
@@ -87,7 +91,7 @@
                 android:textAlignment="center"
                 android:textStyle="italic"
                 android:fontFamily="times new roman"
-                android:textColor="#1854a4"
+                android:textColor="#196ba4"
                 android:textSize="24sp"
                 android:id="@+id/signuptxt"
                 android:layout_marginTop="25dp"/>
