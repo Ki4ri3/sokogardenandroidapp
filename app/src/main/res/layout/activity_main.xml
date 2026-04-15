@@ -22,26 +22,31 @@
         android:background="@drawable/shape"
         />
 
-<!--Below is a linear layout that aligns content horizontally-->
+
+    <!--Below is a linear layout that aligns content horizontally-->
+    <ImageView
+        android:id="@+id/homebanner"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/homebanner" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/signupBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sign Up 👤"
-            android:textSize="25sp"
-            android:padding="10dp"
-            android:textStyle="bold"
-            android:fontFamily="times new roman"
             android:layout_marginLeft="30dp"
-            android:layout_marginTop="18dp"
-            android:textColor="#010112"
             android:backgroundTint="#1FF00A"
-            android:id="@+id/signupBtn"
-            />
+            android:fontFamily="times new roman"
+            android:padding="10dp"
+            android:text="Sign Up 👤"
+            android:textColor="#010112"
+            android:textSize="25sp"
+            android:textStyle="bold" />
 
         <Button
             android:layout_width="wrap_content"
@@ -52,12 +57,25 @@
             android:textStyle="bold"
             android:fontFamily="times new roman"
             android:layout_marginLeft="40dp"
-            android:layout_marginTop="18dp"
             android:textColor="#F9FBFB"
             android:backgroundTint="#0D42BD"
             android:id="@+id/signinBtn"
             />
 
     </LinearLayout>
+
+<!--    Below is our progress bar-->
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressbar"/>
+
+<!--    Below is our recycler view-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/single_item" />
+
 
 </LinearLayout>
