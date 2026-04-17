@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#050526"
+    tools:context=".About">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="About Us"
+        android:fontFamily="times new roman"
+        android:textSize="42sp"
+        android:textColor="#fff"
+        android:textStyle="bold"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="15dp"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:background="#4DF4BE">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/aboutTxt"
+                android:text="Welcome to our E-commerce application. It is a user-friendly platform designed to make online shopping easier and accessible for all. Users can create accounts, login and browse a wide range of products with detailed description and the product photo. We hope you enjoy shopping with us and feel free to drop feedback on improvements that you think might help."
+                android:textSize="20sp"
+                android:fontFamily="times new roman"
+                android:textColor="#070707"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#21AD09"
+                android:layout_marginTop="35dp"
+                android:id="@+id/btnlisten"
+                android:textSize="24sp"
+                android:text="🎙️ More About Us"
+                android:layout_marginRight="35dp"
+                android:layout_marginLeft="35dp"
+                android:fontFamily="times new roman"
+                />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
